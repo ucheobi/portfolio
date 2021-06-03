@@ -26,8 +26,9 @@ const Proficiency = () => {
 
 
     return (
-        <section className="profi">
-            <h2 className="title">My Area of <span className="underline">Expertise</span></h2>
+        <section className="profi" id="expertise">
+            
+            <h2 className="title" >My Area of <span className="underline">Expertise</span></h2>
             <p>My expertise are shown in the segment below</p>
            
             <div className="profi-list">
@@ -38,7 +39,7 @@ const Proficiency = () => {
                         return (
                             <article key={index} className="profi-container">
                                 <div className="profi-circular">
-                                    <CircularProgressbar value={level} text={`${level}%`} />;                   
+                                    <CircularProgressbar value={level} text={`${level}%`} />                  
                                 </div> 
                                 <div className="profi-label">
                                     <p>{proficient}</p>

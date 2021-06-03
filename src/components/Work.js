@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
-import Title from "./Title";
-import { graphql, useStaticQuery, Link } from "gatsby";
-import { FaAngleDoubleRight } from "react-icons/fa";
+import React from 'react';
+import { graphql, useStaticQuery } from "gatsby";
 import WorkEducation from './work-education';
 
 
@@ -24,7 +22,7 @@ const Work = () => {
     } = data;
     
     return (
-        <section className="section-jobs">
+        <section className="section-jobs" id="work">
             <div className="edu-title">
                 <h2 className="title">My Works <span className="underline">Experience</span></h2>
                 <p className="summary">A snippet of my previous work involvements</p>

@@ -1,6 +1,5 @@
 import React from 'react';
-import { graphql, useStaticQuery, Link } from "gatsby";
-import Title from './Title';
+import { graphql, useStaticQuery} from "gatsby";
 import WorkEducation from './work-education';
 
 

@@ -23,12 +23,24 @@ const data = [
     },
     {
         id:4,
-        text: "blog",
-        url: "/blog/",
-        style: "blog-style"
+        text: "work",
+        url: "#work/",
+        style: "work-style"
     },
     {
         id:5,
+        text: "expertise",
+        url: "#expertise/",
+        style: "expertise-style"
+    },
+    {
+        id:6,
+        text: "blog",
+        url: "/",
+        style: "blog-style"
+    },
+    {
+        id:7,
         text: "contact",
         url: "/contact/",
         style: "contact-style"
@@ -37,7 +49,7 @@ const data = [
 
 const tempLinks = data.map(link => {
     return (
-        <li key={link.id} >
+        <li key={link.id} className="page-links">
             <Link className={link.style} to={link.url}>{link.text}</Link>
         </li>
     )
@@ -45,8 +57,7 @@ const tempLinks = data.map(link => {
 
 export default ({ styleClass }) => {
     return (
-        <ul className={`page-links ${styleClass} ? 
-            styleClass : ""}`}>
+        <ul className={` ${styleClass} ? styleClass : ""}`}>
             {tempLinks}
         </ul>
     )

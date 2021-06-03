@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { FaLink, FaImages } from "react-icons/fa"
-import Modal from './Modal';
+import React from 'react';
+import { FaImages } from "react-icons/fa"
+
 
 const ProjectURL = ({showModal}) => {
   
@@ -10,7 +10,7 @@ const ProjectURL = ({showModal}) => {
                 type="button" 
                 onClick={showModal} 
                 className="pop-btn">
-                    <FaImages className="icon-btn" size={60}></FaImages>
+                    <FaImages className="icon-btn" size={30}></FaImages>
             </button>
         </div>
     );

@@ -11,7 +11,10 @@ const Project = ({ title, description, image, tech, github, showModal, hideModal
   return (
     <article className="service">
       <Image fluid={image.childImageSharp.fluid} />
-      <ProjectURL showModal={showModal} hideModal={hideModal} />
+      <div className="display-url">
+        <ProjectURL showModal={showModal} hideModal={hideModal} />
+      </div>
+      
       <h4>{title}</h4>
       <div className="project-underline"></div>
       <p>{description}</p>

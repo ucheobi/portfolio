@@ -25,9 +25,7 @@ const Resume = () => {
     const {download:{publicURL}} = download[0]
    
     return (
-        <div className="btn">
-            <a href={publicURL} download="uche_anota_resume" >Download my Resume</a>
-        </div>   
+        <a className="btn"  href={publicURL} download="uche_anota_resume" >Download my Resume</a>     
     )
 }
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import { useStaticQuery, graphql } from "gatsby"
-import Title from './Title';
+import { useStaticQuery, graphql } from "gatsby";
 import Image from "gatsby-image";
 
 

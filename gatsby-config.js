@@ -37,6 +37,7 @@ module.exports = {
           "resumes",
           "proficiencies"
         ],
+        singleTypes: ["about"],
         queryLimit: 100,
       },
     },
@@ -50,12 +51,23 @@ module.exports = {
           `raleway\:100,200,300,400,500,600,700,800,900`,
           `roboto slab\:100,200,300,400,500,600,700,800,900`,
           `Dancing Script\:400,500,600,700`,
+          `cormorant\:300,400,500,600,700`,
           `Pacifico\:400`,
           `Great Vibes`,
+          `Yellowtail`,
+          `Merienda\:400,700`,
+          `Gentium Book Basic\:400,700`,
+          `Cookie`,
+          `Playball`,
           `sacramento`,
           `Italianno`,
           `Charmonman\:400,700`,
-          `Marck Script`
+          `Marck Script`,
+          `Tangerine\:400,700`,
+          `Allura`,
+          `Bad Script`,
+          `Pontano Sans`,
+          `Noto Serif SC\:200,300,400,500,600,700,800,900`
         ],
         display: "swap"
       },

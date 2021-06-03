@@ -2,16 +2,15 @@ import React from "react";
 import { 
             FaFacebookSquare, 
             FaLinkedin,
-            FaDribbbleSquare,
-            FaBehanceSquare,
-            FaTwitterSquare       
+            FaTwitterSquare,
+            FaInstagramSquare       
         } from "react-icons/fa";
 
 const data = [
     {
         id: 1,
         icon: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
-        url: "https://www.facebook.com",
+        url: "https://www.facebook.com/uche.anota/",
     },
     {
         id:2,
@@ -20,18 +19,13 @@ const data = [
     },
     {
         id: 3,
-        icon: <FaDribbbleSquare className="social-icon"></FaDribbbleSquare>,
-        url: "https://www.dribbble.com"
+        icon: <FaInstagramSquare className="social-icon"></FaInstagramSquare>,
+        url: "https://www.instagram.com/ucheobiefula/"
     },
     {
         id: 4,
-        icon: <FaBehanceSquare className="social-icon"></FaBehanceSquare>,
-        url: "https://www.behance.com"
-    },
-    {
-        id: 5,
         icon: <FaTwitterSquare className="social-icon"></FaTwitterSquare>,
-        url: "https://www.twitter.com"
+        url: "https://www.twitter.com/ucheobi2009"
     }
 ]
 

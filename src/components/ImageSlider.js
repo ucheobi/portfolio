@@ -1,7 +1,7 @@
 import React,{ useState } from 'react';
 import { useStaticQuery, graphql } from "gatsby";
 import Image from "gatsby-image";
-import { FaArrowCircleLeft, FaArrowCircleRight, FaTimesCircle } from "react-icons/fa"
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa"
 
 const query = graphql`
  {
