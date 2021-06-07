@@ -21,13 +21,15 @@ const query = graphql`
 }
 `;
 
-const ImageSlider = ({slideNumber=1, hide}) => {
+const ImageSlider = ({slideNumber}) => {
     const data = useStaticQuery(query)
 
     const {allStrapiProjects:{
             nodes:galleries       
         } 
     } = data;
+
+
 
     const { galery } = galleries[slideNumber];
 
@@ -46,7 +48,6 @@ const ImageSlider = ({slideNumber=1, hide}) => {
         return null;
     }
 
-    console.log(current);
   
     return (
         <section className="slider">

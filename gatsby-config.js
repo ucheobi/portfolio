@@ -8,11 +8,12 @@ require("dotenv").config()
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Web Development Portfolio",
-    description: "This is my web development portfolio website",
+    title: "My Personal Web Development Portfolio",
+    description: "This is my web development portfolio site",
     author: "Uche Anota",
     twitterUsername: "@ucheobi2009",
-    image: "/twitter-img.jpg"
+    image: "/twitter-image.png",
+    siteUrl: "https://uche-anota.netlify.app"
   },
   plugins: [
     `gatsby-transformer-sharp`,
@@ -49,25 +50,8 @@ module.exports = {
           `libre baskerville\:400,700`,
           `Playfair Display\:100,200,300,400,500,600,700,800,900`,
           `raleway\:100,200,300,400,500,600,700,800,900`,
-          `roboto slab\:100,200,300,400,500,600,700,800,900`,
-          `Dancing Script\:400,500,600,700`,
-          `cormorant\:300,400,500,600,700`,
-          `Pacifico\:400`,
-          `Great Vibes`,
-          `Yellowtail`,
-          `Merienda\:400,700`,
-          `Gentium Book Basic\:400,700`,
-          `Cookie`,
-          `Playball`,
-          `sacramento`,
           `Italianno`,
-          `Charmonman\:400,700`,
-          `Marck Script`,
           `Tangerine\:400,700`,
-          `Allura`,
-          `Bad Script`,
-          `Pontano Sans`,
-          `Noto Serif SC\:200,300,400,500,600,700,800,900`
         ],
         display: "swap"
       },

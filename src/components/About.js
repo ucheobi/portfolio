@@ -5,7 +5,12 @@ const query = graphql`
 {
   allStrapiAbout {
     nodes {
+      title
       info
+      description
+      management
+      hobby
+      ability 
     }
   }
 }
@@ -19,9 +24,23 @@ const About = () => {
         nodes: about
     } } = data;
 
-    const { info } = about[0];
+    const { 
+      title,
+      info,
+      description,
+      hobby,
+   } = about[0];
 
-    return <p className="avatar-text">{info}</p>
+    return (
+      <section className="avatar-text">
+        <p>{title}</p>
+        <p >{info}</p>
+        <p >{description}</p>
+        <p >{hobby}</p>
+      </section>
+    ) 
+    
+    
 
 }
 

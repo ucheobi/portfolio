@@ -27,15 +27,12 @@ const Avatar = () => {
       <section className='avatar' id="about_me">
           <div className="avatar-dev">
             <Image fluid={fluid} className="avatar-img" alt="Image_Avatar" />
-            <h1>Hi, I'm Uche </h1>
-            <h3>I'm a <span className="underline">Frontend</span> developer</h3>
+            <h3>Hi, I'm <span className="underline">Uche</span></h3>
           </div>
          
           <div className="avatar-note">
               <h2 className="title">A Little <span className="underline">About</span> Me</h2>
-              <About />
-              <About />
-              <About />                  
+              <About />                
           </div> 
           <Resume />   
       </section>

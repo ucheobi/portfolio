@@ -1,10 +1,12 @@
 import React from 'react';
 import Layout from "../components/Layout";
+import Seo from "../components/SEO";
 import { IoCallSharp, IoMailOutline, IoPaperPlaneOutline } from "react-icons/io5";
 
 const Contact = () => {
     return (
         <Layout>
+            <Seo title="Contact - Uche Anota" description="You can reach me here" />
             <section>
             <h2 className="title contact-title">Get <span className="underline" id="about_me">In</span> Touch</h2>
             <p className="summary">You can reach me through any of the channels below, It will be a pleasure to hear from you.</p>

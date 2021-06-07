@@ -342,32 +342,29 @@ Avatar
 
 .avatar-img {
   width: 100%;
-  margin: 0 auto 1rem;
+  margin: 0 auto;
 }
 
 .avatar-dev {
   float: left;
-  width: 20rem;
+  width: 340px;
   padding: .3rem;
   margin: 0 1.5rem 1rem 1rem;
   background-color: rgba(252, 252, 252, 1);
   border: 0.1px solid #9b9b9b;
 }
 
-.avatar-dev h1 {
-  font-family: "Tangerine", Verdana, "Geneva", Tahoma, sans-serif;
-  font-weight: 700;
-  font-size: 3.5rem;
-  line-height: 1;
-  letter-spacing: 0px;
-}
 
 .avatar-dev h3 {
-  font-family: "roboto mono", Verdana, "Geneva", Tahoma, sans-serif;
+  position: absolute;
+  top: 520px;
+  left: 13rem;
+  color: #fff;
+  font-family: "Italianno", Verdana, "Geneva", Tahoma, sans-serif;
   font-weight: 600;
-  font-size: 1rem;
-  letter-spacing: -0.95px;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+ 
 }
 
 .avatar-center{
@@ -378,32 +375,37 @@ Avatar
   justify-content: center; 
 }
 
-p.avatar-text {
+.avatar-text p {
   text-align: justify;
   padding: 0 1rem;
+  font-family:  "raleway",Verdana, "Geneva", Tahoma, sans-serif;
+  font-weight: 500;
 }
 
 .avatar-note h2 {
   text-align: left;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .avatar-dev {
-    width: 362px;
+    width: 365px;
   }
-  .avatar-img {
-    width: 350px;
-    height: 330px;
+  .avatar-dev h3 {
+    top: 550px;
   }
+  
 }
 
 @media screen and (max-width: 992px){
-
-  .avatar-dev h1 {
-    font-size: 2.5rem;
+  .avatar-note .title {
+    font-size: 1.8rem;
+  }
+  .avatar-dev {
+    width: 355px;
   }
   .avatar-dev h3 {
-    font-size: 0.8rem;
+    top: 550px;
+    font-size: 1.2rem;
   }
 }
 
@@ -414,6 +416,11 @@ p.avatar-text {
   .avatar-dev {
     width: 15rem;
   }
+  .avatar-dev h3 {
+    top: 400px;
+    font-size: 1.2rem;
+    left: 8.5rem;
+  }
 }
 
 @media (max-width: 600px){
@@ -422,6 +429,11 @@ p.avatar-text {
   }
   .avatar-dev {
     width: 12rem;
+  }
+  .avatar-dev h3 {
+    top: 346px;
+    left: 6.4rem;
+    font-size: 1rem;
   }
   
 }
@@ -702,9 +714,12 @@ Services
 .service p {
   -webkit-transition: var(--transition);
   transition: var(--transition); 
+  font-family:  "raleway",Verdana, "Geneva", Tahoma, sans-serif;
+  font-weight: 400;
+  text-align: justify;
 }
 .service h4 {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .service:hover {
@@ -712,7 +727,7 @@ Services
   -webkit-transform: scale(1.03);
   opacity: 1;
   transform: scale(1.03); 
-  background: rgba(187, 185, 185, 0.281);
+  background: rgba(133, 132, 132, 0.699);
 }
 /* .service:hover p {
   color: var(--clr-primary-9);
@@ -749,6 +764,9 @@ Services
 
 .source a {
   color: #0c5180;
+}
+.source a:hover {
+  font-weight: bold;
 }
 
 /*
@@ -915,12 +933,12 @@ Resume
 }
 
 .section-jobs {
-  background-image: url("../assets/pc-img-medium.jpg");
+  background-image: url("../assets/work-img3.jpg");
   padding: 2rem; 
 }
 
 .education {
-  background-image: url("../assets/coding-6.jpeg");
+  background-image: url("../assets/pc-img-medium.jpg");
   padding: 2rem; 
 }
 
@@ -1235,15 +1253,10 @@ Projects
   margin-bottom: 1rem;
 }
 
-.project-url {
-  position: absolute;
-  left: 11rem;
-  top: 8rem;
-  border: none;
-}
+
 
 .icon-btn {
-  color: #fff;
+  color: rgba(2, 2, 2, 0.925);
 }
 
 .icon-btn:hover {
@@ -1262,6 +1275,10 @@ Projects
 .service:hover .display-url {
   display: block;
   transition: transform 35s linear;
+  position: absolute;
+  left: 11rem;
+  top: 12rem;
+  border: none;
 }
 
 .popup-project {
@@ -1278,14 +1295,15 @@ Projects
 .project-stack span,
 .about-stack span {
   display: inline-block;
-  background: rgb(199, 209, 209);
   color: rgb(1, 67, 83);
   margin-right: 0.5rem;
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 0.75rem;
+  font-family:  "raleway",Verdana, "Geneva", Tahoma, sans-serif;
+  font-weight: 700;
   margin-bottom: 0.25rem;
 }
 .about-stack span {
@@ -1341,32 +1359,45 @@ Projects
     text-align: left;
   }
 }
+@media screen and (max-width: 1650px){
+  .service:hover .display-url {
+    left: 11rem;
+    top: 9rem;
+  }
+}
 
-@media screen and (max-width: 1220px){
-  .project-url {
-    left: 45%;
-    top: 20%;
+@media screen and (max-width: 1200px){
+  .service:hover .display-url {
+    left: 10rem;
+    top: 12rem;
   }
 }
 
 @media screen and (max-width: 992px){
-  .project-url {
-    left: 45%;
-    top: 23%;
+  .service:hover .display-url{
+    left: 11rem;
+    top: 13rem;
   }
 }
 
 @media screen and (max-width: 768px){
-  .project-url {
-    left: 45%;
-    top: 20%;
+  .service:hover .display-url {
+    left: 9.5rem;
+    top: 11rem;
   }
 }
 
 @media screen and (max-width: 675px){
-  .project-url {
-    left: 45%;
-    top: 30%;
+  .service:hover .display-url {
+    left: 15rem;
+    top: 14rem;
+  }
+}
+
+@media screen and (max-width: 501px){
+  .service:hover .display-url {
+    left: 13.5rem;
+    top: 12rem;
   }
 }
 
@@ -1393,7 +1424,7 @@ Project Image
 .right-arrow {
   position: absolute;
   top: 40%;
-  right: 2px;
+  right: -5.5rem;
   font-size: 3rem;
   color: #fff;
   z-index: 10;
@@ -1404,7 +1435,7 @@ Project Image
 .left-arrow {
   position: absolute;
   top: 40%;
-  left: 2px;
+  left: -5.5rem;
   font-size: 3rem;
   color: #fff;
   z-index: 10;
@@ -1414,10 +1445,10 @@ Project Image
 
 .close-arrow {
   position: absolute;
-  top: 3%;
+  top: -1%;
   right: -10px;
-  font-size: 2rem;
-  color: #fff;
+  font-size: 2.5rem;
+  color: rgb(163, 20, 20);
   z-index: 10;
   cursor: pointer;
   user-select: none;
@@ -1467,30 +1498,70 @@ Modal
 }
 
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1550px) {
   .modal-main {
-    width: 60rem;
+    width: 900px;
   }
 }
 
 @media screen and (max-width: 992px){
   .modal-main {
-    width: 50rem;
-    height: 50rem;
+    width: 750px;
   }
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 800px){
   .modal-main {
-    width: 40rem;
-    height: 40rem ;
+    width: 700px;
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 760px) {
   .modal-main {
-    width: 30rem;
-    
+    width: 620px;   
+  }
+  .close-arrow {
+    font-size: 2rem;
+  }
+  .right-arrow {
+    font-size: 2rem;
+    right: -4rem;
+  }
+  .left-arrow {
+    font-size: 2rem;
+    left: -4rem;
+  }
+}
+@media screen and (max-width: 670px) {
+  .modal-main {
+    width: 35rem;   
+  }
+  .close-arrow {
+    font-size: 1.5rem;
+  }
+  .right-arrow {
+    font-size: 1.5rem;
+    right: -3.5rem;
+  }
+  .left-arrow {
+    font-size: 1.5rem;
+    left: -3.5rem;
+  }
+}
+@media screen and (max-width: 570px) {
+  .modal-main {
+    width: 25rem;   
+  }
+  .close-arrow {
+    font-size: 1.5rem;
+  }
+  .right-arrow {
+    font-size: 1.5rem;
+    right: -3.5rem;
+  }
+  .left-arrow {
+    font-size: 1.5rem;
+    left: -3.5rem;
   }
 }
 

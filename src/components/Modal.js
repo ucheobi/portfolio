@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaTimesCircle } from "react-icons/fa"
+import { FaTimes } from "react-icons/fa"
 
 
 const Modal = ({ handleClose, show, children}) => {
@@ -9,7 +9,7 @@ const Modal = ({ handleClose, show, children}) => {
         <div className={showHideClassName}>
             <section className="modal-main">
                 {children}
-                <FaTimesCircle className="close-arrow" onClick={handleClose} />
+                <FaTimes className="close-arrow" onClick={handleClose} />
             </section>     
         </div>
     );

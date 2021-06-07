@@ -5,12 +5,12 @@ import { FaImages } from "react-icons/fa"
 const ProjectURL = ({showModal}) => {
   
     return (
-        <div className="project-url">
+        <div className="project-url" >
             <button 
                 type="button" 
                 onClick={showModal} 
                 className="pop-btn">
-                    <FaImages className="icon-btn" size={30}></FaImages>
+                    <FaImages className="icon-btn" size={22}></FaImages>
             </button>
         </div>
     );

@@ -7,7 +7,9 @@ import Projects from '../components/Projects';
 const ProjectPage = ({ data: {
     allStrapiProjects:{nodes: projects}
 }}) => {
+
     return (
+     
         <Layout>
             <section className="projects-page">
                 <Projects projects={projects} title="all projects" />
@@ -21,7 +23,7 @@ export const query = graphql`
     allStrapiProjects {
       nodes {
         github
-        id
+        strapiId
         description
         title
         image {

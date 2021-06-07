@@ -29,6 +29,7 @@ const Skills = () => {
         }
     } = data;
 
+
     return (
         <section className="skills">
         <h2 className="title">My <span className="underline">Skills</span> Highlights </h2>

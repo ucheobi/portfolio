@@ -7,7 +7,7 @@ import Skills from "../components/Skills";
 import Education from "../components/Education";
 import Proficiency from "../components/Proficiency";
 import Work from "../components/Work";
-
+import SEO from "../components/SEO";
 
 export default ({ data }) => {
 
@@ -20,6 +20,7 @@ export default ({ data }) => {
   return (
     <div>
       <Layout>
+          <SEO title="Uche Anota" description="A frontend software engineer and technology enthusiast"/>
           <Avatar />
           <Education />
           <Proficiency />

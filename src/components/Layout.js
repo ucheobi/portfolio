@@ -14,21 +14,25 @@ const Layout = ({ children }) => {
       setIsOpen(!isOpen);
     }
   
-    if(typeof window !== "undefined"){
-      const checkScrollTop = () => {
-        if (!showScroll && window.pageYOffset > 400){
-          setShowScroll(true)
-        } else if (showScroll && window.pageYOffset <= 400){
-          setShowScroll(false)
-        }
-      };
 
-      var scrollTop = () =>{
-        window.scrollTo({top: 0, behavior: 'smooth'});
-      };
-        
-      window.addEventListener('scroll', checkScrollTop);
-    }
+      if(typeof window !== "undefined"){
+        var checkScrollTop = () => {
+          if (!showScroll && window.pageYOffset > 400){
+            setShowScroll(true)
+          } else if (showScroll && window.pageYOffset <= 400){
+            setShowScroll(false)
+          }
+        };
+  
+        var scrollTop = () =>{
+          window.scrollTo({top: 0, behavior: 'smooth'});
+        };
+          
+        window.addEventListener('scroll', checkScrollTop);
+      }
+    
+    
+    
     
     return (
         <>
